@@ -1,0 +1,21 @@
+{
+  "name": "openapi-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/test.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "openapi-gen": "openapi-generator-cli generate -i https://shoes.orisu.lol/v3/api-docs -o generated -g typescript-fetch --skip-validate-spec --additional-properties=supportsES6=true,typescriptThreePlus=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.13.2",
+    "cross-fetch": "^4.0.0",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
